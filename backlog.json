@@ -1,0 +1,202 @@
+[
+  {
+    "title": "Epic 1 — User Management & Authentication",
+    "body": "Implement user registration, login, roles, and account linking for parents and players.",
+    "labels": ["epic", "auth"]
+  },
+  {
+    "title": "US-1.1: Parent Registration",
+    "body": "As a parent, I can register for a new account using email/password.",
+    "labels": ["story", "auth"]
+  },
+  {
+    "title": "US-1.2: Parent Login",
+    "body": "As a parent, I can log into my account securely.",
+    "labels": ["story", "auth"]
+  },
+  {
+    "title": "US-1.3: Link Player to Parent",
+    "body": "As a parent, I can register my child as a player and link them to my account.",
+    "labels": ["story", "user-management"]
+  },
+  {
+    "title": "US-1.4: Player Profile Access",
+    "body": "As a player, I can view my personal profile once registered.",
+    "labels": ["story", "user-management"]
+  },
+  {
+    "title": "US-1.5: Parent Profile Edit",
+    "body": "As a parent, I can edit my profile and update my contact information.",
+    "labels": ["story", "user-management"]
+  },
+  {
+    "title": "US-1.6: Role-Based Access Control",
+    "body": "As a system, I enforce role-based access: parent, player, coach, admin.",
+    "labels": ["story", "backend"]
+  },
+  {
+    "title": "Epic 2 — Player Profile Management",
+    "body": "Enable creation, update and storage of player profiles.",
+    "labels": ["epic", "players"]
+  },
+  {
+    "title": "US-2.1: Create Player Profile",
+    "body": "As a parent, I can create a player profile with name, photo, team, and position.",
+    "labels": ["story", "players"]
+  },
+  {
+    "title": "US-2.2: Update Player Profile",
+    "body": "As a parent, I can update my child’s profile and re-upload new photos.",
+    "labels": ["story", "players"]
+  },
+  {
+    "title": "US-2.3: Secure Photo Storage",
+    "body": "As a system, I store and validate uploaded photos securely.",
+    "labels": ["story", "storage"]
+  },
+  {
+    "title": "US-2.4: Coach Access to Players",
+    "body": "As a coach, I can view the profiles of players on my team.",
+    "labels": ["story", "coach", "frontend"]
+  },
+  {
+    "title": "Epic 3 — NFT Minting Flow",
+    "body": "Enable parents to request NFT minting and admins to approve mint requests.",
+    "labels": ["epic", "nft", "minting"]
+  },
+  {
+    "title": "US-3.1: Mint Request Submission",
+    "body": "As a parent, I can submit a mint request for my child’s player card.",
+    "labels": ["story", "minting"]
+  },
+  {
+    "title": "US-3.2: Store Mint Requests",
+    "body": "As a system, I store mint requests in a pending state.",
+    "labels": ["story", "minting"]
+  },
+  {
+    "title": "US-3.3: Admin Approve/Reject Minting",
+    "body": "As an admin, I can approve or reject minting requests.",
+    "labels": ["story", "admin", "minting"]
+  },
+  {
+    "title": "US-3.4: Generate NFT Record",
+    "body": "As a system, I generate an NFT record upon approval (mocked for MVP).",
+    "labels": ["story", "minting", "backend"]
+  },
+  {
+    "title": "US-3.5: Notify Parent of Mint Status",
+    "body": "As a system, I notify parents when minting is approved or rejected.",
+    "labels": ["story", "notifications"]
+  },
+  {
+    "title": "Epic 4 — Marketplace Core Functionality",
+    "body": "Enable listing, browsing, and purchasing of NFTs in marketplace.",
+    "labels": ["epic", "marketplace"]
+  },
+  {
+    "title": "US-4.1: List NFT for Sale",
+    "body": "As a parent/player, I can list my NFT for sale in the marketplace.",
+    "labels": ["story", "marketplace"]
+  },
+  {
+    "title": "US-4.2: Browse Marketplace",
+    "body": "As a buyer, I can view all NFTs listed for sale.",
+    "labels": ["story", "marketplace"]
+  },
+  {
+    "title": "US-4.3: Purchase NFT",
+    "body": "As a buyer, I can purchase an NFT and transfer ownership (internal DB transfer for MVP).",
+    "labels": ["story", "marketplace", "trade"]
+  },
+  {
+    "title": "US-4.4: Record Transaction",
+    "body": "As a system, I track transactions and update ownership records.",
+    "labels": ["story", "transactions", "backend"]
+  },
+  {
+    "title": "US-4.5: Cancel NFT Listing",
+    "body": "As a seller, I can cancel my listing before it sells.",
+    "labels": ["story", "marketplace"]
+  },
+  {
+    "title": "Epic 5 — Parental Controls & Approvals",
+    "body": "Add parental approval layers for safety and compliance.",
+    "labels": ["epic", "parental-control"]
+  },
+  {
+    "title": "US-5.1: Parent Mint Approval",
+    "body": "As a parent, I can approve or deny minting requests initiated for my child.",
+    "labels": ["story", "parental-control"]
+  },
+  {
+    "title": "US-5.2: Approve/Deny Trading Access",
+    "body": "As a parent, I can enable or disable trading permissions for my child.",
+    "labels": ["story", "parental-control"]
+  },
+  {
+    "title": "US-5.3: Enforce Trading Block",
+    "body": "As a system, I block all unapproved child transactions automatically.",
+    "labels": ["story", "parental-control", "backend"]
+  },
+  {
+    "title": "US-5.4: Approval Dashboard",
+    "body": "As a parent, I can view pending approval requests in a dashboard.",
+    "labels": ["story", "frontend", "parental-control"]
+  },
+  {
+    "title": "Epic 6 — Admin Dashboard",
+    "body": "Create minimal admin panel for minting management.",
+    "labels": ["epic", "admin", "dashboard"]
+  },
+  {
+    "title": "US-6.1: View Mint Queue",
+    "body": "As an admin, I can see a queue of pending mint requests.",
+    "labels": ["story", "admin"]
+  },
+  {
+    "title": "US-6.2: Approve/Reject Mint Requests",
+    "body": "As an admin, I can approve or reject requests.",
+    "labels": ["story", "admin"]
+  },
+  {
+    "title": "US-6.3: View Moderation Logs",
+    "body": "As an admin, I can view moderation logs for all actions taken.",
+    "labels": ["story", "admin", "logs"]
+  },
+  {
+    "title": "Epic 7 — Transaction History & Logs",
+    "body": "Enable users to see their transaction history.",
+    "labels": ["epic", "transactions"]
+  },
+  {
+    "title": "US-7.1: View My Transaction History",
+    "body": "As a parent, I can see my transaction history.",
+    "labels": ["story", "transactions", "frontend"]
+  },
+  {
+    "title": "US-7.2: Store Transaction Logs",
+    "body": "As a system, I store a transaction log for compliance and reporting.",
+    "labels": ["story", "transactions", "backend"]
+  },
+  {
+    "title": "Epic 8 — Testing, Demo Prep & Polishing",
+    "body": "Complete final testing and prepare demo data for presentation.",
+    "labels": ["epic", "testing", "demo"]
+  },
+  {
+    "title": "US-8.1: Seed Demo Data",
+    "body": "As a developer, I can seed the database with test data for demo.",
+    "labels": ["story", "demo", "data"]
+  },
+  {
+    "title": "US-8.2: Run Smoke Tests",
+    "body": "As a QA, I can run a smoke test across all core flows.",
+    "labels": ["story", "testing"]
+  },
+  {
+    "title": "US-8.3: Final Demo Prep",
+    "body": "As a presenter, I can run the full demo scenario successfully.",
+    "labels": ["story", "demo"]
+  }
+]
